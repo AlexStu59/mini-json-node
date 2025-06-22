@@ -11,6 +11,8 @@
 # hlsearch on (H) or off (h):
 ~H
 # Command Line History (newest to oldest):
+:wq
+|2,0,1750623427,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -21,9 +23,25 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+"q	CHAR	0
+	w
+|3,0,26,0,1,0,1750623353,"w"
 
 # File marks:
+'0  6  69  ~/.git/MERGE_MSG
+|4,48,6,69,1750623427,"~/.git/MERGE_MSG"
 
 # Jumplist (newest first):
+-'  6  69  ~/.git/MERGE_MSG
+|4,39,6,69,1750623427,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1750623248,"~/.git/MERGE_MSG"
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/MERGE_MSG
+	*	1750623422	0
+	"	6	69
+	^	6	70
+	.	6	69
+	+	6	69

@@ -58,3 +58,29 @@ git remote add origine https://github.com/AlexStu59/mini-json-node.git
 git push -u origin main
 git push
 git push -u origin main
+git add .
+git commit -m "Initial commit avec app JSON"
+git branch -M main
+git push -u origin main
+git remote add origin https://github.com/AlexStu59/mini-json-node.git
+git push -u origin main
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+git pull origin main --allow-unrelated-histories --no-rebase
+git push -u origin main
+oc start-build bonjour-json --follow
+oc get pods
+oc logs bonjour-json-b9c9bbf4c-lwkkt
+oc get route
+oc expose svc/bonjour-json
+rm server.js 
+nano server.js
+git add .
+git commit -Ãm "Correction du fichier server.js"
+git push
+oc start-build bonjour-json --follow
+oc expose svc/bonjour-json
+oc get routes
+ls
+rm server.js 
+nano server.js
