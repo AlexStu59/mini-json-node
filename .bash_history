@@ -84,3 +84,21 @@ oc get routes
 ls
 rm server.js 
 nano server.js
+git add .
+git commit -m "Correction du fichier server.js"
+git push
+oc start-build bonjour-json --follow
+oc get pods
+oc get routes
+nano s2i/environment
+ls
+mkdir .s2i
+nano .s2i/environment
+git add .s2i/environment
+git commit -m "Ajout du fichier .s2i/environment pour forcer npm start"
+git push
+oc start-build bonjour-json --follow
+oc rsh $(oc get pod -l app=bonjour-json -o name)
+curl -v localhost:8080
+echo "Coucou depuis hello.txt" > hello.txt
+nano server.js 
